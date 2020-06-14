@@ -1,83 +1,114 @@
 
 
 /* Show it is fixed to the top */
-body {
+/* body { 
     min-height: 75rem;
-    padding-top: 4.5rem;
-    overflow-x: hidden;
-  }
+    padding-top: 4.5rem; 
+     overflow-x: hidden;
+  } */
 
 nav {
     border-bottom: 2px solid black;
     
 }
 
-/* Hamburger menu css */
-.hamburger-menu {
-    display: inline-block;
-    cursor: pointer;
-    padding: 20px;
-  }
+ 
+
+  .divider1 {
   
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+    border-bottom: gray 2px solid;
+    width: 50%;
+   margin: auto;
   }
 
-  /* Hamburger css end */
+  .divider2 {
+  
+    border-bottom: gray 3px solid;
+    width: 50%;
+    margin: auto;
 
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: .4fr .4fr .4fr .4fr;
+    grid-template-rows: .7fr .7fr .7fr;
+    gap: 0px 0px;
+    grid-template-areas: "img1 img2 img2 img3" "img4 img2 img2 img5" "img6 img6 img7 img8";
+    }
+    
+    .grid-item1 { grid-area: img1; }
+    .grid-item2 { grid-area: img2; }
+    .grid-item3 { grid-area: img3; }
+    .grid-item4 { grid-area: img4; }
+    .grid-item5 { grid-area: img5; }
+    .grid-item6 { grid-area: img6; }
+    .grid-item7 { grid-area: img7; }
+    .grid-item8 { grid-area: img8; }
+
+
+    .work-img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
   /* Index page flexbox css */
 
-  .row {
+  /* .row {
     display: flex;
     flex-wrap: wrap;
     
-  }
+  } */
   
   /* Create 3 equal columns that sits next to each other */
-  .column {
+  /* .column {
     flex: 33%;
     max-width: 33%;
   
-  }
+  } */
   
-  .work-img {
-    vertical-align: middle;
-    width: 100%;
-  }
+
   
-  /* Responsive layout - makes a 2 column-layout instead of 3 columns */
+  /* Responsive layout - makes a 2 column-layout */
   @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8";
     }
+
+    .grid-item1 { grid-area: img1; }
+    .grid-item2 { grid-area: img2; }
+    .grid-item3 { grid-area: img3; }
+    .grid-item4 { grid-area: img4; }
+    .grid-item5 { grid-area: img5; }
+    .grid-item6 { grid-area: img6; }
+    .grid-item7 { grid-area: img7; }
+    .grid-item8 { grid-area: img8; }
   }
   
   /* Responsive layout - makes the 2 columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8";
     }
+    .grid-item1 { grid-area: img1; }
+    .grid-item2 { grid-area: img2; }
+    .grid-item3 { grid-area: img3; }
+    .grid-item4 { grid-area: img4; }
+    .grid-item5 { grid-area: img5; }
+    .grid-item6 { grid-area: img6; }
+    .grid-item7 { grid-area: img7; }
+    .grid-item8 { grid-area: img8; }
   }
 
-  /* Index page Flexbox css end */
+  /* Index page CSS grid end */
 
 
 
@@ -96,13 +127,19 @@ nav {
     text-align: justify;
   }
 
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
   hr {
     background-color: #333;
   }
 
   .rectangles-overlay {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
   .group1 {
@@ -111,8 +148,8 @@ nav {
 
   #rec1 {
     border: white 2px solid;
-    height:500px;
-    width: 350px;
+    height:600px;
+    width: 500px;
     position: absolute;
     top: 0;
     left: 0;
@@ -129,11 +166,11 @@ nav {
 
   #rec2 {
     border: white 2px solid;
-    height:500px;
-    width: 350px;
+    height:600px;
+    width: 500px;
     position: absolute;
     z-index: 9;
-    margin: 50px;
+    margin: 70px;
   }
 
 
@@ -141,18 +178,22 @@ nav {
     position: relative;
   }
 
+  .contact-container{
+    padding-top: 200px;
+  }
   #rec3 {
    
     border: white 2px solid;
-    height:500px;
-    width: 200px;
+    height:600px;
+    width: 500px;
+    z-index: 9;
     position: absolute;
 
   }
   #rec4 {
     border: white 2px solid;
-    height:500px;
-    width: 200px;
+    height:600px;
+    width: 500px;
     position: absolute;
   }
   
@@ -183,3 +224,30 @@ nav {
       max-width: 100%;
     }
   }
+
+  /* .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "bio-photo bio";
+  }
+  
+  .bio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "heading" "bio-text" "resume-bttn" "linkedin-bttn";
+    grid-area: bio;
+  }
+  
+  .heading { grid-area: heading; }
+  
+  .bio-text { grid-area: bio-text; }
+  
+  .resume-bttn { grid-area: resume-bttn; }
+  
+  .linkedin-bttn { grid-area: linkedin-bttn; }
+  
+  .bio-photo { grid-area: bio-photo; } */

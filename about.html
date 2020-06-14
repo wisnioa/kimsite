@@ -6,98 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Kim Judkins, Graphic Designer</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-top-fixed/">
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- Custom styles for this template -->
+    <!-- Materialize core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Custom styles -->
     <link href="./assets/style.css" rel="stylesheet">
 </head>
 
 <body style="background:#48ccce">
-    <nav class="navbar navbar-expand-md fixed-top bg-white">
-        <div class="hamburger-menu" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-        <!-- <img src="images/kim-logo.png" height="50px" width="100px" href="index.html" class="d-inline-block align-top"
-            alt="Kim logo"> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <!-- <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-               
-            </ul> -->
+    <div class="navbar-fixed">
+        <nav class="white">
 
-        </div>
-    </nav>
-        <div class="row">
-            <div class="about-me">
-                <div class="column">
-                    <div class="rectangles-overlay">
-                        <div class="group1">
-                            <div id="rec1"></div>
-                            <img id="about-img" src="images/Kim_bio.jpg" />
-                            <div id="rec2"></div>
-                        </div>
-                        <!-- <div class="group2">
-                            <div id="rec3"></div>
-                            <div id="rec4"></div>
-                        </div> -->
-                    </div>
-                </div>
 
-                <div class="column">
-                    <div class="about-text">
-                        <h2>Hi I'm Kim</h2>
-                        <h4>I design things and take photos</h4>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                            fugiat
-                            nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                            anim
-                            id
-                            est laborum</p>
-                        <button type="button" class="btn btn-secondary" style="width:100px">Resume</button>
-                    </div>
-                </div>
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large black-text"><i
+                        style="font-size: 3rem" class="material-icons">menu</i></a>
+
+
+                <!-- <div class="hamburger-menu" data-target="sidenav" onclick="myFunction(this)"> -->
+
+                <!-- <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div> -->
+
+                <img src="images/kim-logo.png" height="50px" width="100px" href="index.html" class="brand-logo"
+                    alt="Kim logo">
 
 
             </div>
+        </nav>
+    </div>
+
+    <ul id="slide-out" class="sidenav">
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">Get To Know Me</a>
+        </li>
+
+        <div class="divider1"></div>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Talk to Me</a>
+        </li>
+
+        <div class="divider2"></div>
+
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">What I Do</a>
+        </li>
+    </ul>
 
 
+    <div class="row">
+        <div class="about-me">
+            <div class="column">
+                <div class="rectangles-overlay">
+                    <div class="group1">
+                        <div id="rec1"></div>
+                        <img id="about-img" src="images/Kim_bio.jpg" />
+                        <div id="rec2"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column">
+
+                <div class="about-text">
+                    <h2 class="white-text"><span class="grey-text darken-1">Hi I'm</span> Kim</h2>
+                    <h4 class="white-text">I design things and take photos</h4>
+                    <hr>
+                    <p class="white-text">I'm a professional graphic designer and an amateur photographer.
+                        I love to travel and absorb as much of the world as I can. My inspiration and style comes
+                        from
+                        everything I see, and is constantly changing, just like the world around us.
+                        I also love a good mural!</p>
+
+                    <div class="button-container">
+                        <div class="row">
+
+                            <a href="./images/Kim Judkins Resume.pdf" download="kim resume">
+                                <button type="button" class="btn grey darken-1" style="width:200px">Resume</button>
+                            </a>
+                        </div>
+
+                        <div class="row">
+                            <a href="https://www.linkedin.com/in/kimjudkins" target="blank">
+                                <button type="button" class="btn grey darken-1" style="width:200px">LinkedIn</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="contact-container">
+                <div class="rectangles-overlay">
+                    <div class="group2">
+                        <div id="rec3"></div>
+                        <img id="about-img" src="images/Kim_bio.jpg" />
+                        <div id="rec4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <script src="assets/app.js"></script>
 </body>
 
